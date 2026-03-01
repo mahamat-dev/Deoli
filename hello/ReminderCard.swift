@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ReminderCard: View {
     @EnvironmentObject var reminderManager: ReminderManager
-    @State var reminder: Reminder
+    @Binding var reminder: Reminder
     @State private var showingEdit = false
     
     var body: some View {

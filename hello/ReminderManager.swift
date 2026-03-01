@@ -1,3 +1,4 @@
+import Combine
 import Foundation
 
 class ReminderManager: ObservableObject {
@@ -6,10 +7,10 @@ class ReminderManager: ObservableObject {
     init() {
         // Sample data
         reminders = [
-            Reminder(title: "Buy groceries", notes: "Milk, bread, eggs", category: .shopping, priority: .high),
-            Reminder(title: "Team meeting", notes: "Discuss project timeline", category: .work, priority: .high),
-            Reminder(title: "Morning workout", notes: "30 minutes cardio", category: .health, priority: .medium),
-            Reminder(title: "Call mom", notes: "Weekly catch up", category: .personal, priority: .low)
+            Reminder(title: "Buy groceries", notes: "Milk, bread, eggs", priority: .high, category: .shopping),
+            Reminder(title: "Team meeting", notes: "Discuss project timeline", priority: .high, category: .work),
+            Reminder(title: "Morning workout", notes: "30 minutes cardio", priority: .medium, category: .health),
+            Reminder(title: "Call mom", notes: "Weekly catch up", priority: .low, category: .personal)
         ]
     }
     

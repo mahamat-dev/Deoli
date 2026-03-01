@@ -6,18 +6,25 @@ struct ContentView: View {
     @State private var selectedCategory: Category?
     @State private var searchText = ""
     
-    var filteredReminders: [Reminder] {
-        var result = reminderManager.reminders
-        
-        if let category = selectedCategory {
-            result = result.filter { $0.category == category }
+    var filteredIndices: [Int] {
+        reminderManager.reminders.indices.filter { index in
+            let reminder = reminderManager.reminders[index]
+            if let category = selectedCategory, reminder.category != category {
+                return false
+            }
+            if !searchText.isEmpty, !reminder.title.localizedCaseInsensitiveContains(searchText) {
+                return false
+            }
+            return true
         }
-        
-        if !searchText.isEmpty {
-            result = result.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
-        }
-        
-        return result
+    }
+    
+    var pendingIndices: [Int] {
+        filteredIndices.filter { !reminderManager.reminders[$0].isCompleted }
+    }
+    
+    var completedIndices: [Int] {
+        filteredIndices.filter { reminderManager.reminders[$0].isCompleted }
     }
     
     var body: some View {
@@ -38,32 +45,30 @@ struct ContentView: View {
                         .padding(.top, 8)
                     
                     // Reminders list
-                    if filteredReminders.isEmpty {
+                    if filteredIndices.isEmpty {
                         EmptyStateView()
                     } else {
                         ScrollView {
                             LazyVStack(spacing: 12) {
                                 // Pending section
-                                if !reminderManager.pendingReminders.isEmpty {
+                                if !pendingIndices.isEmpty {
                                     Section {
-                                        ForEach(filteredReminders.filter { !$0.isCompleted }) { reminder in
-                                            ReminderCard(reminder: reminder)
-                                                .environmentObject(reminderManager)
+                                        ForEach(pendingIndices, id: \.self) { index in
+                                            ReminderCard(reminder: $reminderManager.reminders[index])
                                         }
                                     } header: {
-                                        SectionHeader(title: "To Do", count: reminderManager.pendingReminders.count)
+                                        SectionHeader(title: "To Do", count: pendingIndices.count)
                                     }
                                 }
                                 
                                 // Completed section
-                                if !reminderManager.completedReminders.isEmpty {
+                                if !completedIndices.isEmpty {
                                     Section {
-                                        ForEach(filteredReminders.filter { $0.isCompleted }) { reminder in
-                                            ReminderCard(reminder: reminder)
-                                                .environmentObject(reminderManager)
+                                        ForEach(completedIndices, id: \.self) { index in
+                                            ReminderCard(reminder: $reminderManager.reminders[index])
                                         }
                                     } header: {
-                                        SectionHeader(title: "Completed", count: reminderManager.completedReminders.count)
+                                        SectionHeader(title: "Completed", count: completedIndices.count)
                                     }
                                 }
                             }
