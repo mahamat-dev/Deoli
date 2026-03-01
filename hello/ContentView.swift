@@ -112,7 +112,7 @@ struct CategoryFilterView: View {
                         title: category.rawValue,
                         icon: category.icon,
                         isSelected: selectedCategory == category,
-                        color: Color(category.color)
+                        color: category.color
                     ) {
                         selectedCategory = category
                     }

@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 enum Priority: Int, CaseIterable, Codable {
     case low = 0
@@ -13,11 +14,11 @@ enum Priority: Int, CaseIterable, Codable {
         }
     }
     
-    var color: String {
+    var color: Color {
         switch self {
-        case .low: return "green"
-        case .medium: return "orange"
-        case .high: return "red"
+        case .low: return .green
+        case .medium: return .orange
+        case .high: return .red
         }
     }
 }
@@ -37,12 +38,12 @@ enum Category: String, CaseIterable, Codable {
         }
     }
     
-    var color: String {
+    var color: Color {
         switch self {
-        case .personal: return "purple"
-        case .work: return "blue"
-        case .shopping: return "orange"
-        case .health: return "pink"
+        case .personal: return .purple
+        case .work: return .blue
+        case .shopping: return .orange
+        case .health: return .pink
         }
     }
 }

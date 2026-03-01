@@ -24,7 +24,7 @@ struct AddReminderView: View {
                         ForEach(Priority.allCases, id: \.self) { priority in
                             HStack {
                                 Circle()
-                                    .fill(Color(priority.color))
+                                    .fill(priority.color)
                                     .frame(width: 12, height: 12)
                                 Text(priority.title)
                             }
@@ -98,7 +98,7 @@ struct EditReminderView: View {
                         ForEach(Priority.allCases, id: \.self) { priority in
                             HStack {
                                 Circle()
-                                    .fill(Color(priority.color))
+                                    .fill(priority.color)
                                     .frame(width: 12, height: 12)
                                 Text(priority.title)
                             }
@@ -169,16 +169,16 @@ struct CategoryButton: View {
             VStack(spacing: 8) {
                 Image(systemName: category.icon)
                     .font(.title2)
-                    .foregroundColor(isSelected ? .white : Color(category.color))
+                    .foregroundColor(isSelected ? .white : category.color)
                     .frame(width: 50, height: 50)
                     .background(
                         Circle()
-                            .fill(isSelected ? Color(category.color) : Color(category.color).opacity(0.15))
+                            .fill(isSelected ? category.color : category.color.opacity(0.15))
                     )
                 
                 Text(category.rawValue)
                     .font(.caption)
-                    .foregroundColor(isSelected ? Color(category.color) : .secondary)
+                    .foregroundColor(isSelected ? category.color : .secondary)
             }
         }
         .buttonStyle(PlainButtonStyle())

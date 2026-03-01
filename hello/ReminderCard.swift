@@ -15,7 +15,7 @@ struct ReminderCard: View {
             }) {
                 ZStack {
                     Circle()
-                        .strokeBorder(reminder.isCompleted ? Color.green : Color(reminder.priority.color), lineWidth: 2)
+                        .strokeBorder(reminder.isCompleted ? Color.green : reminder.priority.color, lineWidth: 2)
                         .frame(width: 24, height: 24)
                     
                     if reminder.isCompleted {
@@ -37,9 +37,9 @@ struct ReminderCard: View {
                     // Category icon
                     Image(systemName: reminder.category.icon)
                         .font(.caption)
-                        .foregroundColor(Color(reminder.category.color))
+                        .foregroundColor(reminder.category.color)
                         .padding(6)
-                        .background(Color(reminder.category.color).opacity(0.15))
+                        .background(reminder.category.color.opacity(0.15))
                         .cornerRadius(8)
                     
                     Text(reminder.title)
@@ -128,8 +128,8 @@ struct PriorityBadge: View {
             .fontWeight(.semibold)
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
-            .background(Color(priority.color).opacity(0.15))
-            .foregroundColor(Color(priority.color))
+            .background(priority.color.opacity(0.15))
+            .foregroundColor(priority.color)
             .cornerRadius(8)
     }
 }
