@@ -12,37 +12,37 @@
 			containerPortal = 14C69B802F534B32002BCE3E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 14C69B872F534B32002BCE3E;
-			remoteInfo = hello;
+			remoteInfo = Deoli;
 		};
 		14C69BA22F534B33002BCE3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14C69B802F534B32002BCE3E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 14C69B872F534B32002BCE3E;
-			remoteInfo = hello;
+			remoteInfo = Deoli;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14C69B882F534B32002BCE3E /* hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14C69B972F534B33002BCE3E /* helloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14C69BA12F534B33002BCE3E /* helloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C69B882F534B32002BCE3E /* Deoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C69B972F534B33002BCE3E /* DeoliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeoliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C69BA12F534B33002BCE3E /* DeoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeoliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		14C69B8A2F534B32002BCE3E /* hello */ = {
+		14C69B8A2F534B32002BCE3E /* Deoli */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = hello;
+			path = Deoli;
 			sourceTree = "<group>";
 		};
-		14C69B9A2F534B33002BCE3E /* helloTests */ = {
+		14C69B9A2F534B33002BCE3E /* DeoliTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = helloTests;
+			path = DeoliTests;
 			sourceTree = "<group>";
 		};
-		14C69BA42F534B33002BCE3E /* helloUITests */ = {
+		14C69BA42F534B33002BCE3E /* DeoliUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = helloUITests;
+			path = DeoliUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		14C69B7F2F534B32002BCE3E = {
 			isa = PBXGroup;
 			children = (
-				14C69B8A2F534B32002BCE3E /* hello */,
-				14C69B9A2F534B33002BCE3E /* helloTests */,
-				14C69BA42F534B33002BCE3E /* helloUITests */,
+				14C69B8A2F534B32002BCE3E /* Deoli */,
+				14C69B9A2F534B33002BCE3E /* DeoliTests */,
+				14C69BA42F534B33002BCE3E /* DeoliUITests */,
 				14C69B892F534B32002BCE3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		14C69B892F534B32002BCE3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14C69B882F534B32002BCE3E /* hello.app */,
-				14C69B972F534B33002BCE3E /* helloTests.xctest */,
-				14C69BA12F534B33002BCE3E /* helloUITests.xctest */,
+				14C69B882F534B32002BCE3E /* Deoli.app */,
+				14C69B972F534B33002BCE3E /* DeoliTests.xctest */,
+				14C69BA12F534B33002BCE3E /* DeoliUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14C69B872F534B32002BCE3E /* hello */ = {
+		14C69B872F534B32002BCE3E /* Deoli */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14C69BAB2F534B33002BCE3E /* Build configuration list for PBXNativeTarget "hello" */;
+			buildConfigurationList = 14C69BAB2F534B33002BCE3E /* Build configuration list for PBXNativeTarget "Deoli" */;
 			buildPhases = (
 				14C69B842F534B32002BCE3E /* Sources */,
 				14C69B852F534B32002BCE3E /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				14C69B8A2F534B32002BCE3E /* hello */,
+				14C69B8A2F534B32002BCE3E /* Deoli */,
 			);
-			name = hello;
+			name = Deoli;
 			packageProductDependencies = (
 			);
-			productName = hello;
-			productReference = 14C69B882F534B32002BCE3E /* hello.app */;
+			productName = Deoli;
+			productReference = 14C69B882F534B32002BCE3E /* Deoli.app */;
 			productType = "com.apple.product-type.application";
 		};
-		14C69B962F534B33002BCE3E /* helloTests */ = {
+		14C69B962F534B33002BCE3E /* DeoliTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14C69BAE2F534B33002BCE3E /* Build configuration list for PBXNativeTarget "helloTests" */;
+			buildConfigurationList = 14C69BAE2F534B33002BCE3E /* Build configuration list for PBXNativeTarget "DeoliTests" */;
 			buildPhases = (
 				14C69B932F534B33002BCE3E /* Sources */,
 				14C69B942F534B33002BCE3E /* Frameworks */,
@@ -131,18 +131,18 @@
 				14C69B992F534B33002BCE3E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				14C69B9A2F534B33002BCE3E /* helloTests */,
+				14C69B9A2F534B33002BCE3E /* DeoliTests */,
 			);
-			name = helloTests;
+			name = DeoliTests;
 			packageProductDependencies = (
 			);
-			productName = helloTests;
-			productReference = 14C69B972F534B33002BCE3E /* helloTests.xctest */;
+			productName = DeoliTests;
+			productReference = 14C69B972F534B33002BCE3E /* DeoliTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		14C69BA02F534B33002BCE3E /* helloUITests */ = {
+		14C69BA02F534B33002BCE3E /* DeoliUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14C69BB12F534B33002BCE3E /* Build configuration list for PBXNativeTarget "helloUITests" */;
+			buildConfigurationList = 14C69BB12F534B33002BCE3E /* Build configuration list for PBXNativeTarget "DeoliUITests" */;
 			buildPhases = (
 				14C69B9D2F534B33002BCE3E /* Sources */,
 				14C69B9E2F534B33002BCE3E /* Frameworks */,
@@ -154,13 +154,13 @@
 				14C69BA32F534B33002BCE3E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				14C69BA42F534B33002BCE3E /* helloUITests */,
+				14C69BA42F534B33002BCE3E /* DeoliUITests */,
 			);
-			name = helloUITests;
+			name = DeoliUITests;
 			packageProductDependencies = (
 			);
-			productName = helloUITests;
-			productReference = 14C69BA12F534B33002BCE3E /* helloUITests.xctest */;
+			productName = DeoliUITests;
+			productReference = 14C69BA12F534B33002BCE3E /* DeoliUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14C69B832F534B32002BCE3E /* Build configuration list for PBXProject "hello" */;
+			buildConfigurationList = 14C69B832F534B32002BCE3E /* Build configuration list for PBXProject "Deoli" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14C69B872F534B32002BCE3E /* hello */,
-				14C69B962F534B33002BCE3E /* helloTests */,
-				14C69BA02F534B33002BCE3E /* helloUITests */,
+				14C69B872F534B32002BCE3E /* Deoli */,
+				14C69B962F534B33002BCE3E /* DeoliTests */,
+				14C69BA02F534B33002BCE3E /* DeoliUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		14C69B992F534B33002BCE3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14C69B872F534B32002BCE3E /* hello */;
+			target = 14C69B872F534B32002BCE3E /* Deoli */;
 			targetProxy = 14C69B982F534B33002BCE3E /* PBXContainerItemProxy */;
 		};
 		14C69BA32F534B33002BCE3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14C69B872F534B32002BCE3E /* hello */;
+			target = 14C69B872F534B32002BCE3E /* Deoli */;
 			targetProxy = 14C69BA22F534B33002BCE3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -411,7 +411,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.hello.hello;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.deoli.deoli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -444,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.hello.hello;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.deoli.deoli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -466,7 +466,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.hello.helloTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.deoli.deoliTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -474,7 +474,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hello.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hello";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deoli.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deoli";
 			};
 			name = Debug;
 		};
@@ -488,7 +488,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.hello.helloTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.deoli.deoliTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -496,7 +496,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hello.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hello";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deoli.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deoli";
 			};
 			name = Release;
 		};
@@ -508,7 +508,7 @@
 				DEVELOPMENT_TEAM = K2A939B28F;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.hello.helloUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.deoli.deoliUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -516,7 +516,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = hello;
+				TEST_TARGET_NAME = Deoli;
 			};
 			name = Debug;
 		};
@@ -528,7 +528,7 @@
 				DEVELOPMENT_TEAM = K2A939B28F;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.hello.helloUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netcodetd.deoli.deoliUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -536,14 +536,14 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = hello;
+				TEST_TARGET_NAME = Deoli;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14C69B832F534B32002BCE3E /* Build configuration list for PBXProject "hello" */ = {
+		14C69B832F534B32002BCE3E /* Build configuration list for PBXProject "Deoli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C69BA92F534B33002BCE3E /* Debug */,
@@ -552,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14C69BAB2F534B33002BCE3E /* Build configuration list for PBXNativeTarget "hello" */ = {
+		14C69BAB2F534B33002BCE3E /* Build configuration list for PBXNativeTarget "Deoli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C69BAC2F534B33002BCE3E /* Debug */,
@@ -561,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14C69BAE2F534B33002BCE3E /* Build configuration list for PBXNativeTarget "helloTests" */ = {
+		14C69BAE2F534B33002BCE3E /* Build configuration list for PBXNativeTarget "DeoliTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C69BAF2F534B33002BCE3E /* Debug */,
@@ -570,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14C69BB12F534B33002BCE3E /* Build configuration list for PBXNativeTarget "helloUITests" */ = {
+		14C69BB12F534B33002BCE3E /* Build configuration list for PBXNativeTarget "DeoliUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C69BB22F534B33002BCE3E /* Debug */,

@@ -1,13 +1,13 @@
 //
-//  helloUITests.swift
-//  helloUITests
+//  DeoliUITests.swift
+//  DeoliUITests
 //
 //  Created by Mahamat Ali Youssouf on 28/02/2026.
 //
 
 import XCTest
 
-final class helloUITests: XCTestCase {
+final class DeoliUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

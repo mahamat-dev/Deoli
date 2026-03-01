@@ -1,13 +1,13 @@
 //
-//  helloUITestsLaunchTests.swift
-//  helloUITests
+//  DeoliUITestsLaunchTests.swift
+//  DeoliUITests
 //
 //  Created by Mahamat Ali Youssouf on 28/02/2026.
 //
 
 import XCTest
 
-final class helloUITestsLaunchTests: XCTestCase {
+final class DeoliUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
